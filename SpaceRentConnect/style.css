@@ -1,5 +1,5 @@
 :root {
-  --main-color: #2288ff;
+  --main-color: #ffffff;
   --text-a-main: #777;
   --line-colour: #ececed;
   --wrapcolor: #cccccc;
@@ -81,8 +81,8 @@ a:hover {
 }
 img {
   max-width: 100%;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   display: inline-block;
 }
 .white-button {
@@ -148,7 +148,6 @@ img {
   position: static;
 }
 .menu-item {
-  color: white;
   letter-spacing: 2px;
   text-transform: uppercase;
   cursor: pointer;
@@ -159,9 +158,6 @@ img {
   line-height: 18px;
   text-decoration: none;
   position: relative;
-  &:hover {
-    color: var(--white);
-  }
 }
 .menu-item-wrap {
   opacity: 0.4;
@@ -175,14 +171,26 @@ img {
   display: inline-block;
   position: relative;
   overflow: hidden;
+  
 }
 .menu-item-wrap.atual,
 .menu-item-wrap:hover {
   opacity: 1;
   color: #fff;
-  background-color: var(--black);
+  background-color: #2288ff;
   border-radius: 10px;
 }
+
+#Login {
+  position: fixed;
+  right: 150px;
+  background-color: #2288ff;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+
 
 .conteudo {
   color: var(--white);
@@ -354,7 +362,7 @@ img {
   margin-bottom: 100px;
 }
 .parallax-section.cc-about-parallax {
-  background-image: url(images/brooke-lark-230509-unsplash.jpg);
+  background-image: url(images/wepik-export-20240327232321oGBr.jpeg);
   background-size: cover;
 }
 .footersubheadline {
@@ -525,7 +533,6 @@ img {
 .body {
   -webkit-text-fill-color: inherit;
   background-color: var(--main-color);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-clip: border-box;
 }
 .heading {

@@ -6,57 +6,40 @@
     <link rel="stylesheet" href="style.css" />
     <title>SpaceRentConnect</title>
   </head>
-  <body class="body">
-    <div id="Menumenu" class="menu">
-      <div
-        data-collapse="medium"
-        data-animation="default"
-        data-duration="400"
-        data-easing="ease-out"
-        data-easing2="ease"
-        role="banner"
-        class="wrap cc-menu w-nav"
-      >
-        <a href="/" aria-current="page" class="brand navbrand atual"
-          ><img
-            src="images/logo.png"
-            width="10%;
-            class="logo-image"
-        /></a>
+  <body>
+    <div
+    data-collapse="medium"
+    data-animation="default"
+    data-duration="400"
+    data-easing="ease"
+    data-easing2="ease"
+    role="banner"
+    class="navigation w-nav">
+    <div id="Navmenu" class="navigation-wrap">
+      <div id="menuu" class="menu">
         <nav role="navigation" id="navmenu" class="nav-menu w-nav-menu">
-          <a
-            href="Index.html"
-            aria-current="page"
-            class="menu-item-wrap w-inline-block atual"
-          >
+          <a href="Index.html" aria-current="page" class="menu-item-wrap atual">
             <div id="Home" class="menu-item">Home</div>
             <div class="menuitem"></div>
           </a>
-          <a href="/Salas" class="menu-item-wrap w-inline-block">
+          <a href="/salas/Salas.html" class="menu-item-wrap w-inline-block">
             <div id="Locals" class="menu-item">Salas</div>
             <div class="menuitem"></div>
           </a>
-          <a href="/about" class="menu-item-wrap w-inline-block">
+          <a href="/about/About.html" class="menu-item-wrap w-inline-block">
             <div id="About" class="menu-item">Sobre</div>
             <div class="menuitem"></div>
           </a>
-          <a href="/contact" class="menu-item-wrap w-inline-block">
+          <a href="/contact/Contact.html" class="menu-item-wrap">
             <div id="Contact" class="menu-item">Contato</div>
             <div class="menuitem"></div>
           </a>
-          <a href="/login" class="menu-item-wrap w-inline-block">
+          <a href="/login/Login.html" class="menu-item-wrap w-inline-block">
             <div id="Login" class="menu-item">Login</div>
             <div class="menuitem"></div>
           </a>
         </nav>
-        <div class="menu-button w-nav-button">
-          <img
-            src="images/Menu-Icon_1Menu-Icon.png"
-            width="20"
-            alt=""
-            class="menu-icon"
-          />
-        </div>
+      </div>
       </div>
     </div>
     <div class="header-section">
@@ -72,7 +55,7 @@
                 Veja a variedade de salões e locais de festas abaixo
               </p>
             </div>
-            <a href="/products" class="white-button w-inline-block">
+            <a href="/salas/Salas.html" class="white-button w-inline-block">
               <div>Veja Nossas Salas</div>
             </a>
           </div>
@@ -112,9 +95,9 @@
               </p>
             </div>
             <a
-              href="/products"
-              id="BlackButton"
-              class="blackbutton w-inline-block"
+              href="/salas/Salas.html "
+              id="blackbutton"
+              class="white-button w-inline-block"
             >
               <div>Veja mais</div>
             </a>
@@ -167,19 +150,22 @@
                 value="Inscrever-se"
               />
             </form>
-            <div class="mensagemsus w-form-done">
-              <div class="success-message-wrap">
-                <img
-                  src="images/Success-Icon-White_1Success-Icon-White.png"
-                  width="33"
-                  alt=""
-                  class="newsletter-success-icon"
-                />
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <footer>
+      <p>&copy; 2024 - Todos os direitos reservados</p>
+      <nav>
+        <ul class="foot">
+          <li><a href="#">Termos de uso</a></li>
+          <li><a href="#">Política de privacidade</a></li>
+          <li><a href="/about/About.html">Sobre nós</a></li>
+          <li><a href="/contact/Contact.html">Contato</a></li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>

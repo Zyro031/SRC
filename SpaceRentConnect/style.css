@@ -1,7 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+  list-style: none;
+  text-decoration: none;
+}
 :root {
-  --text-a-main: #777;
+  --main-color:#2288ff ;
+  --text-a-main: #1a1b1f;
   --line-colour: #ececed;
-  --wrapcolor: #cccccc;
+  --wrapcolor: #333;
   --black: black;
   --white: #ffffff;
 }
@@ -15,7 +27,7 @@
 }
 body {
   color: var(--main-color);
-  font-family: Karla, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
@@ -383,19 +395,21 @@ img {
   margin-bottom: 20px;
 }
 .small-image-1 {
-  background-image: url(images/imagem_2024-03-27_200617725.png);
+  background-image: url(images/pod1.jpg);
   background-position: 0 0;
-  background-size: auto;
+  background-size: cover;
   width: 160px;
   height: 130px;
   margin-bottom: 20px;
+  margin-right: 20px;
 }
 .small-image-2 {
-  background-image: url(images/imagem_2024-03-27_200617725.png);
-  background-position: 0 0;
-  background-size: auto;
+  background-image: url(images/pod2.jpg);
+  background-position: 0;
+  background-size: cover;
   width: 160px;
   height: 130px;
+  margin-bottom: 20px;
 }
 .imagensamostra {
   align-items: center;
@@ -488,11 +502,11 @@ img {
   margin-bottom: 25px;
 }
 .imagem1amostra {
-  background-image: url(images/imagem_2024-03-27_200617725.png),
+  background-image: url(images/reu1.jpg),
     url(images/Image.jpg);
   background-position: 50%, 0 0;
   background-repeat: repeat, repeat;
-  background-size: auto, cover;
+  background-size: cover;
   background-attachment: scroll, scroll;
   width: 280px;
   height: 280px;

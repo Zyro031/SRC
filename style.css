@@ -138,7 +138,8 @@ img {
   background-color: var(--main-color);
 }
 .dark_field-label:hover {
-  background-color: #0b6868;
+  background-color: #145094;
+  color: black;
 }
 .label {
   opacity: 0.6;

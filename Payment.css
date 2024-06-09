@@ -1,0 +1,239 @@
+*{padding:0; margin:0; box-sizing: border-box; font-family:sans-serif;}
+.headeri{
+	width: 100vw;
+	min-height: 100vh;
+	background-image: radial-gradient(closest-side, #2288ff , #192f6a);
+	font-size: 1.2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container{
+	background: white;
+	max-width: 800px;
+	min-height: 500px;
+	display: flex;
+	justify-content:space-between;
+	align-items: flex-start;
+	padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+}
+.left{
+	flex-basis: 50%;
+}
+.right{
+	flex-basis: 50%;
+}
+form{
+	padding: 1rem;
+}
+
+h3{
+	margin-top: 1rem;
+	color:#314862;
+	}
+
+form input[type="text"]{
+	width: 100%;
+	padding: 0.5rem 0.7rem;
+	margin: 0.5rem 0;
+	outline: none;
+    border-radius: 5px;
+}
+
+#cep{
+	display: flex;
+	margin-top: 0.5rem;
+}
+#cep select{
+	padding: 0.5rem 0.7rem;
+    border-radius: 5px;
+}
+#cep input[type="number"]{
+	padding: 0.5rem 0.7rem;
+	margin-left: 5px;
+    border-radius: 7px;	
+}
+input[type="submit"]{
+	width: 95%;
+	padding: 0.7rem 1.5rem;
+	background: #192f6a;
+	color: white;
+	border: none;
+	outline: none;
+	margin-top: 1rem;
+	cursor: pointer;
+    border-radius: 7px;
+}
+
+input[type="submit"]:hover{
+	background: #2288ff;
+	transition: all 0.5s;
+}
+
+
+@media only screen and (max-width: 770px){
+	.container{
+		flex-direction: column;
+	}
+	body{
+		overflow-x: hidden;
+	}
+}
+
+/* botão de cancelamento */
+
+.ui-btn {
+	--btn-default-bg: rgb(41, 41, 41);
+	--btn-padding: 15px 20px;
+	--btn-hover-bg: rgb(51, 51, 51);
+	--btn-transition: .3s;
+	--btn-letter-spacing: .1rem;
+	--btn-animation-duration: 1.2s;
+	--btn-shadow-color: rgba(0, 0, 0, 0.137);
+	--btn-shadow: 0 2px 10px 0 var(--btn-shadow-color);
+	--hover-btn-color: #FAC921;
+	--default-btn-color: #fff;
+	--font-size: 16px;
+	--font-weight: 600;
+	--font-family: Menlo,Roboto Mono,monospace;
+  }
+  
+  .ui-btn {
+	box-sizing: border-box;
+	padding: var(--btn-padding);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--default-btn-color);
+	font: var(--font-weight) var(--font-size) var(--font-family);
+	background: var(--btn-default-bg);
+	border: none;
+	cursor: pointer;
+	transition: var(--btn-transition);
+	overflow: hidden;
+	box-shadow: var(--btn-shadow);
+	margin-top: 15px;
+  }
+  
+  .ui-btn span {
+	letter-spacing: var(--btn-letter-spacing);
+	transition: var(--btn-transition);
+	box-sizing: border-box;
+	position: relative;
+	background: inherit;
+  }
+  
+  .ui-btn span::before {
+	box-sizing: border-box;
+	position: absolute;
+	content: "";
+	background: inherit;
+  }
+  
+  .ui-btn:hover, .ui-btn:focus {
+	background: var(--btn-hover-bg);
+  }
+  
+  .ui-btn:hover span, .ui-btn:focus span {
+	color: var(--hover-btn-color);
+  }
+  
+  .ui-btn:hover span::before, .ui-btn:focus span::before {
+	animation: chitchat linear both var(--btn-animation-duration);
+  }
+  
+  @keyframes chitchat {
+	0% {
+	  content: "#¨";
+	}
+  
+	5% {
+	  content: ".";
+	}
+  
+	10% {
+	  content: "^{%";
+	}
+  
+	15% {
+	  content: "-!$";
+	}
+  
+	20% {
+	  content: "#$_%";
+	}
+  
+	25% {
+	  content: "№:0@!";
+	}
+  
+	30% {
+	  content: "#{+.#";
+	}
+  
+	35% {
+	  content: "@}-?%¨*";
+	}
+  
+	40% {
+	  content: "?{4@%$";
+	}
+  
+	45% {
+	  content: "=.,^!@!#";
+	}
+  
+	50% {
+	  content: "?2@%@%#";
+	}
+  
+	55% {
+	  content: "\;1}]{=%";
+	}
+  
+	60% {
+	  content: "?{%:%";
+	  right: 0;
+	}
+  
+	65% {
+	  content: "|{f[4";
+	  right: 0;
+	}
+  
+	70% {
+	  content: "{4%0%";
+	  right: 0;
+	}
+  
+	75% {
+	  content: "'1_0<";
+	  right: 0;
+	}
+  
+	80% {
+	  content: "{0%";
+	  right: 0;
+	}
+  
+	85% {
+	  content: "]>'";
+	  right: 0;
+	}
+  
+	90% {
+	  content: "4";
+	  right: 0;
+	}
+  
+	95% {
+	  content: "2";
+	  right: 0;
+	}
+  
+	100% {
+	  content: "";
+	  right: 0;
+	}
+  }

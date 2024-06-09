@@ -69,7 +69,7 @@ h6 {
   line-height: 28px;
 }
 p {
-  color: #fff;
+  color: #969696;
   margin-bottom: 15px;
 }
 a {
@@ -635,6 +635,8 @@ label {
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
+  align-items: center;
+  justify-content: center;
 }
 .paragraph-bigger {
   opacity: 1;
@@ -827,6 +829,7 @@ label {
 .contact-form-wrap {
   border: 1px solid #eee;
   padding: 45px 50px 50px;
+  border-radius: 10px;
 }
 .contact-form-grid {
   grid-column-gap: 80px;
@@ -1158,6 +1161,7 @@ label {
   }
   #wrapdetalhes {
     grid-area: 1/2/2/3;
+    
   }
   #contactdev1 {
     grid-area: 1/1/2/2;
@@ -1272,4 +1276,413 @@ footer a:hover {
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+/* Site De Denuncia */ 
+
+#redcont {
+  background-color: #dc3545;
+  color: white;
+  font-size: 40px;
+  justify-content: center;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+#outrosCampo {
+  display: none;
+}
+.container {
+  margin-top: 20px;
+}
+form input, form select, form label {
+  margin-bottom: 15px;
+}
+
+
+/* botão de cancelamento */
+
+.ui-btn {
+	--btn-default-bg: rgb(41, 41, 41);
+	--btn-padding: 15px 20px;
+	--btn-hover-bg: rgb(51, 51, 51);
+	--btn-transition: .3s;
+	--btn-letter-spacing: .1rem;
+	--btn-animation-duration: 1.2s;
+	--btn-shadow-color: rgba(0, 0, 0, 0.137);
+	--btn-shadow: 0 2px 10px 0 var(--btn-shadow-color);
+	--hover-btn-color: #FAC921;
+	--default-btn-color: #fff;
+	--font-size: 16px;
+	--font-weight: 600;
+	--font-family: Menlo,Roboto Mono,monospace;
+  }
+  
+  .ui-btn {
+	box-sizing: border-box;
+	padding: var(--btn-padding);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--default-btn-color);
+	font: var(--font-weight) var(--font-size) var(--font-family);
+	background: var(--btn-default-bg);
+	border: none;
+	cursor: pointer;
+	transition: var(--btn-transition);
+	overflow: hidden;
+	box-shadow: var(--btn-shadow);
+	margin-top: 15px;
+  }
+  
+  .ui-btn span {
+	letter-spacing: var(--btn-letter-spacing);
+	transition: var(--btn-transition);
+	box-sizing: border-box;
+	position: relative;
+	background: inherit;
+  }
+  
+  .ui-btn span::before {
+	box-sizing: border-box;
+	position: absolute;
+	content: "";
+	background: inherit;
+  }
+  
+  .ui-btn:hover, .ui-btn:focus {
+	background: var(--btn-hover-bg);
+  }
+  
+  .ui-btn:hover span, .ui-btn:focus span {
+	color: var(--hover-btn-color);
+  }
+  
+  .ui-btn:hover span::before, .ui-btn:focus span::before {
+	animation: chitchat linear both var(--btn-animation-duration);
+  }
+  
+  @keyframes chitchat {
+	0% {
+	  content: "#¨";
+	}
+  
+	5% {
+	  content: ".";
+	}
+  
+	10% {
+	  content: "^{%";
+	}
+  
+	15% {
+	  content: "-!$";
+	}
+  
+	20% {
+	  content: "#$_%";
+	}
+  
+	25% {
+	  content: "№:0@!";
+	}
+  
+	30% {
+	  content: "#{+.#";
+	}
+  
+	35% {
+	  content: "@}-?%¨*";
+	}
+  
+	40% {
+	  content: "?{4@%$";
+	}
+  
+	45% {
+	  content: "=.,^!@!#";
+	}
+  
+	50% {
+	  content: "?2@%@%#";
+	}
+  
+	55% {
+	  content: "\;1}]{=%";
+	}
+  
+	60% {
+	  content: "?{%:%";
+	  right: 0;
+	}
+  
+	65% {
+	  content: "|{f[4";
+	  right: 0;
+	}
+  
+	70% {
+	  content: "{4%0%";
+	  right: 0;
+	}
+  
+	75% {
+	  content: "'1_0<";
+	  right: 0;
+	}
+  
+	80% {
+	  content: "{0%";
+	  right: 0;
+	}
+  
+	85% {
+	  content: "]>'";
+	  right: 0;
+	}
+  
+	90% {
+	  content: "4";
+	  right: 0;
+	}
+  
+	95% {
+	  content: "2";
+	  right: 0;
+	}
+  
+	100% {
+	  content: "";
+	  right: 0;
+	}
+  }
+
+  /* Página de Cancelamento */ 
+
+  #header {
+    background-color: rgb(41, 41, 41);
+    color: #FAC921;
+    font-size: 40px;
+    justify-content: center;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    animation: fadeIn 2s;
+    border-bottom: 5px solid #FAC921;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+#outrosCampo {
+    display: none;
+}
+.container {
+    margin-top: 30px;
+    animation: slideUp 1s;
+}
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+form input, form select, form label {
+    margin-bottom: 20px;
+}
+.btn-primary {
+    background-color: #FAC921;
+    border: none;
+    color: rgb(41, 41, 41);
+    font-weight: bold;
+    transition: transform 0.3s, background-color 0.3s;
+}
+.btn-primary:hover {
+    background-color: #e0b019;
+    transform: scale(1.05);
+}
+
+/* Alugar */
+
+.rental-header {
+  background-color: var(--main-color);
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.rental-main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.rental-image-container {
+  position: relative;
+  width: 25%;
+  height: 25%;
+}
+
+.rental-slideshow-container {
+  max-width: 100%;
+  position: relative;
+}
+
+.rental-mySlides {
+  display: none;
+}
+
+.rental-mySlides img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.rental-progress-bar {
+  width: 100%;
+  height: 5px;
+  background-color: #ddd;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.rental-progress-bar::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+  background-color: #055386;
+  animation: progress 5s linear infinite;
+}
+
+@keyframes progress {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.rental-prev, .rental-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 5%;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0,0,0,0.25);
+}
+
+.rental-next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.rental-prev:hover, .rental-next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.rental-info-container {
+  width: 70%;
+}
+
+.rental-info, .rental-description, .rental-details, .rental-host, .rental-contact {
+  margin: 2rem;
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.rental-info h2 {
+  color: #333;
+}
+
+.rental-location {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.rental-price {
+  color: #6200ea;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.rental-action-button {
+  background-color: #005eea;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.rental-action-button:hover {
+  background-color: #003fb3;
+}
+
+.rental-description h3, .rental-details h3, .rental-host h3, .rental-contact h3 {
+  color: #333;
+}
+
+.rental-host-info {
+  display: flex;
+  align-items: center;
+}
+
+.rental-host-info img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-right: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 0.5rem;
+}
+
+form input, form textarea {
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #3700b3;
+}
+
+.rental-footer {
+  background-color: #6200ea;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.Pa {
+  color: #b1b1b1;
 }

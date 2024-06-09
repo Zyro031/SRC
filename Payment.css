@@ -81,6 +81,7 @@ input[type="submit"]:hover{
 	}
 }
 
+/* botão de cancelamento */
 
 .ui-btn {
 	--btn-default-bg: rgb(41, 41, 41);

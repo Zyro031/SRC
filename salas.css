@@ -249,7 +249,7 @@ nav {
     right: 0;
   }
 
-  /* botão de cancelamento */
+  /* botão de denuncia */
 
   .ui-btn {
     cursor: pointer;
@@ -277,12 +277,18 @@ nav {
     height: 40px;
   }
   .ui-btn:active {
-    width: 115px;
-    height: 38px;
+    width: 30px;
+    height: 40px;
     letter-spacing: 0px;
   }
   
 
   .ui-btn .i {
     width: 100px;
+  }
+
+  .fa {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
   }
